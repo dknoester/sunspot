@@ -1,0 +1,41 @@
+set description 005-monthly-pc
+set email dk@msu.edu
+set freq_email Crash
+set priority 3
+set class_pref 99
+set walltime 48
+set mem_request 2
+set config_dir config
+set max_cpus 30
+
+#1..30 pc1 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_1.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_1.txt
+
+#1..30 pc2 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_2.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_2.txt
+
+#1..30 pc3 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_3.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_3.txt
+
+#1..30 pc4 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_4.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_4.txt
+
+#1..30 pc5 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_5.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_5.txt
+
+#1..30 pc6 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_6.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_6.txt
+
+#1..30 pc7 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_7.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_7.txt
+
+#1..30 pc8 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_8.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_8.txt
+
+#1..30 pc9 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_9.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_9.txt
+
+#1..30 pc10 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_10.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_10.txt
+
+#1..30 pc11 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_11.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_11.txt
+
+#1..30 pc12 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_12.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_12.txt
+
+#1..30 pc13 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_13.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_13.txt
+
+#1..30 pc14 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_14.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_14.txt
+
+#1..30 pc15 /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_15.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_15.txt
+
+1..30 pc15l /mnt/home/dk/bin/sunspot -c ealib.cfg --ea.rng.seed $seed --sunspot.train_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Training_MonthlySSN_PC_15.txt --sunspot.test_filename=/mnt/home/dk/data/sunspot/ssn-monthly/pc/Test_MonthlySSN_PC_15.txt --ea.run.updates=200000

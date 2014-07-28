@@ -21,6 +21,7 @@ bin
 dist
 DerivedData
 var
+.ipynb*
 
 # ignore os x / xcode metadata:
 .DS_Store
