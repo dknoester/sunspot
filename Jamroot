@@ -11,7 +11,7 @@ use-project /libmkv : ../ealib/libmkv ;
 exe sunspot :
     src/sunspot.cpp
     /libea//libea_runner
-    /libea//libmkv
+    /libmkv//libmkv
     : <include>./include <link>static
     ;
 
