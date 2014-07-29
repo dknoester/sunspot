@@ -6,11 +6,13 @@ project
     ;
 
 use-project /libea : ../ealib/libea ;
+use-project /libmkv : ../ealib/libmkv ;
 
-exe template-all-ones :
-    src/all_ones.cpp
+exe sunspot :
+    src/sunspot.cpp
     /libea//libea_runner
+    /libea//libmkv
     : <include>./include <link>static
     ;
 
-install dist : template-all-ones : <location>$(HOME)/bin ;
+install dist : sunspot : <location>$(HOME)/bin ;
