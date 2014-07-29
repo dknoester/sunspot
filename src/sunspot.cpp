@@ -28,33 +28,6 @@ using namespace mkv;
 #include "sunspot.h"
 #include "analysis.h"
 
-//using namespace ealib;
-
-//! Sunspot configuration.
-//struct sunspot_configuration : public mkv::configuration {
-//    
-//    //! Called as the final step of EA initialization.
-//    template <typename EA>
-//    void initialize(EA& ea) {
-//        typedef mkv::configuration parent;
-//        
-//        parent::initialize(ea);
-//
-//        std::size_t nbits = get<SUNSPOT_INTEGER_BITS>(ea) + get<SUNSPOT_FRACTIONAL_BITS>(ea);
-//        
-//        // we're currently limiting the number of bits that we're using to == long:
-//        assert(nbits < (sizeof(long)*8));
-//
-//        // make sure we have at least 1 lag:
-//        assert(get<SUNSPOT_INPUT_LAGS>(ea) >= 1);
-//
-//        boost::get<mkv::IN>(parent::desc) = get<SUNSPOT_INPUT_LAGS>(ea) * nbits;
-//        boost::get<mkv::OUT>(parent::desc) = 2 * nbits * get<SUNSPOT_PREDICTION_HORIZON>(ea);
-//        
-//        parent::translator.disable(mkv::PROBABILISTIC);
-//        parent::translator.disable(mkv::ADAPTIVE);
-//    }
-//};
 
 typedef markov_network_evolution
 < sunspot_fitness
@@ -63,23 +36,6 @@ typedef markov_network_evolution
 > ea_type;
 
 
-
-//
-//
-//
-//typedef evolutionary_algorithm
-//< individual<mkv::representation_type, , markov_network< >, indirectS, mkv::default_traits>
-//, mkv::ancestor_generator
-//, mkv::mutation_type
-//, recombination::asexual
-//, generational_models::moran_process<selection::proportionate< >, selection::elitism<selection::random> >
-//, dont_stop
-//, sunspot_configuration
-//> ea_type;
-
-
-/*! Define the EA's command-line interface.
- */
 template <typename EA>
 class cli : public cmdline_interface<EA> {
 public:
@@ -93,7 +49,6 @@ public:
         add_option<CHECKPOINT_PREFIX>(this);
         add_option<RNG_SEED>(this);
         add_option<RECORDING_PERIOD>(this);
-//        add_option<ELITISM_N>(this);
         
         // sunspot options
         add_option<SUNSPOT_TRAIN>(this);
@@ -114,10 +69,9 @@ public:
         add_tool<sunspot_test_rmse>(this);
         add_tool<sunspot_train_predictions>(this);
         add_tool<sunspot_test_predictions>(this);
-//        add_tool<mkv::causal_graph>(this);
-//        add_tool<mkv::reduced_graph>(this);
-//        add_tool<mkv::genetic_graph>(this);
-//        add_tool<mkv::network_statistics>(this);
+        add_tool<analysis::dominant_genetic_graph>(this);
+        add_tool<analysis::dominant_causal_graph>(this);
+        add_tool<analysis::dominant_reduced_graph>(this);
     }
     
     virtual void gather_events(EA& ea) {
