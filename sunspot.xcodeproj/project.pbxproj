@@ -54,7 +54,7 @@
 		425D10AC19867E640082C0BA /* analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = analysis.h; sourceTree = "<group>"; };
 		425D10AD19867E640082C0BA /* sunspot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sunspot.cpp; sourceTree = "<group>"; };
 		425D10AE19867E640082C0BA /* sunspot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sunspot.h; sourceTree = "<group>"; };
-		42706B11166AF51C003FB2E3 /* template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = template.xcconfig; sourceTree = "<group>"; };
+		42706B11166AF51C003FB2E3 /* sunspot.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = sunspot.xcconfig; sourceTree = "<group>"; };
 		42F4EE6616AEE80D000123A4 /* sunspot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sunspot; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 		42441A7A15861669009863BE /* etc */ = {
 			isa = PBXGroup;
 			children = (
-				42706B11166AF51C003FB2E3 /* template.xcconfig */,
+				42706B11166AF51C003FB2E3 /* sunspot.xcconfig */,
 				425D10AB19867E450082C0BA /* ealib.cfg */,
 			);
 			path = etc;
@@ -185,14 +185,14 @@
 /* Begin XCBuildConfiguration section */
 		4244197815859482009863BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42706B11166AF51C003FB2E3 /* template.xcconfig */;
+			baseConfigurationReference = 42706B11166AF51C003FB2E3 /* sunspot.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		4244197915859482009863BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42706B11166AF51C003FB2E3 /* template.xcconfig */;
+			baseConfigurationReference = 42706B11166AF51C003FB2E3 /* sunspot.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;

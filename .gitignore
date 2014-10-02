@@ -31,3 +31,5 @@ xcuserdata
 # ignore output from ealib:
 checkpoint-*
 *.dat
+
+data
